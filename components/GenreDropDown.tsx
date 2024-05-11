@@ -42,12 +42,15 @@ const GenreDropDown = async () => {
       <DropdownMenuTrigger className='text-white flex items-center text-sm font-medium'>
         Genre <ChevronDown className='ml-1' size={20} />
       </DropdownMenuTrigger>
-      <DropdownMenuContent>
+      <DropdownMenuContent className='flex  flex-col -space-y-1'>
         <DropdownMenuLabel>Select a Genre</DropdownMenuLabel>
-        <DropdownMenuSeparator />
+        {/* <DropdownMenuSeparator /> */}
         {data?.genres?.map((genre) => (
           <DropdownMenuItem key={genre?.id}>
-            <Link href={`/genre/${genre?.id}?genre=${genre?.name}`}>
+            <Link
+              href={`/genre/${genre?.id}?genre=${genre?.name}`}
+              className=''
+            >
               {genre?.name}
             </Link>
           </DropdownMenuItem>

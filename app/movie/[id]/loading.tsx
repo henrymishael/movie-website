@@ -2,7 +2,7 @@ import React from "react";
 
 const Loading = () => {
   return (
-    <div className='flex flex-col items-center justify-center h-screen gap-2 overflow-hidden'>
+    <div className='flex flex-col items-center justify-center h-[85vh] gap-2 overflow-hidden'>
       <div className='triangle-svg'>
         <svg width='80px' height='80px' viewBox='-4 -1 38 34'>
           <polygon
